@@ -11,7 +11,7 @@ or alternatively use ```git clone https://github.com/Crypto-Loot/cryptoloot.git`
 ```text
 <script src="lib/miner.min.js"></script>
 <script>
-	CryptoLoot.CONFIG.LIB_URL: "https://yourwebsite.com/lib/";
+	CryptoLoot.CONFIG.LIB_URL = "https://yourwebsite.com/lib/";
             var miner=new CryptoLoot.Anonymous('YOUR_PUBLIC_KEY', {
                 threads:4,autoThreads:false,throttle:0.2,
             });
