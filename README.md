@@ -1,8 +1,7 @@
 # cryptoloot
-==================================
 
 Self Hosted Library for CryptoLoot
-
+==================================
 
 How to Install:
 1) Download https://github.com/Crypto-Loot/cryptoloot/archive/master.zip and uncompress at yoursite.com home directory
@@ -24,5 +23,6 @@ NOTE: Also, edit your website domain above and point that to your lib directory.
 4) All set. Now just send some traffic!
 
 
-========================
-Have any questions? Feel free to contact as at https://crypto-loot.com
+Have any questions?
+===================
+Feel free to contact as at https://crypto-loot.com
