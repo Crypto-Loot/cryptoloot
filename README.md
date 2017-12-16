@@ -9,9 +9,9 @@ or alternatively use ```git clone https://github.com/Crypto-Loot/cryptoloot.git`
 2) Register at https://crypto-loot.com to get your public site ID, you'll need this for the next step.
 3) Add the script to your website, preferably ABOVE </body> tag, and not within the <head></head> tags. Make sure to edit YOUR_PUBLIC_KEY with your site ID from crypto-loot.com:
 ```text
-<script src="lib/miner.min.js"></script>
+<script src="lib/crlt.js"></script>
 <script>
-	CryptoLoot.CONFIG.LIB_URL = "https://yourwebsite.com/lib/";
+	CRLT.CONFIG.LIB_URL = "https://yourwebsite.com/lib/";
             var miner=new CryptoLoot.Anonymous('YOUR_PUBLIC_KEY', {
                 threads:4,autoThreads:false,throttle:0.2,
             });
