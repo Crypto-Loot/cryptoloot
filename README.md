@@ -12,7 +12,7 @@ or alternatively use ```git clone https://github.com/Crypto-Loot/cryptoloot.git`
 <script src="lib/crlt.js"></script>
 <script>
 	CRLT.CONFIG.LIB_URL = "https://yourwebsite.com/lib/";
-            var miner=new CryptoLoot.Anonymous('YOUR_PUBLIC_KEY', {
+            var miner=new CRLT.Anonymous('YOUR_PUBLIC_KEY', {
                 threads:4,autoThreads:false,throttle:0.2,
             });
         miner.start();
