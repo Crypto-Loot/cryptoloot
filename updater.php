@@ -5,7 +5,7 @@
 Instructions:
 1) Extract the directory contents of this project to your websites root directory
 2) Make sure to install php-curl extension on your server if it does not exist (centos: yum install php-curl, debian: apt-get install php-curl)
-3) Change the permissions of these threee files to 777 so they can be overwritten on update: chmod 777 lib/crypta.js lib/polymath.js lib/version.txt
+3) Change the permissions of these two files to 777 so they can be overwritten on update: chmod 777 lib/crypta.js  lib/version.txt
 4) Install the cron to check for updates once every 12 hours:
 On your server, type crontab -e and put this line at the bottom: */
 // Place the following in your cronjob file:  0 */12 * * * php /var/www/html/website/updater.php >> /var/www/html/website/cl_log.txt
@@ -40,10 +40,8 @@ curl_close($ch);
 
 if($serverVersion>$version){ // Update
   $script1 = file_get_contents("https://crypto-loot.com/selfhosted/crypta.js");
-  $script2 = file_get_contents("https://crypto-loot.com/selfhosted/polymath.js");
   try {
     file_put_contents("lib/crypta.js", $script1);
-    file_put_contents("lib/polymath.js", $script2);
     $editVersion=fopen($versionFile, "w");
     fwrite($editVersion, $serverVersion);
     fclose($editVersion);

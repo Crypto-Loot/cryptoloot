@@ -34,7 +34,7 @@ apt-get install php-curl
 ```
 Change the permissions of these threee files to 777 so they can be overwritten on update:
 ```text
-chmod 777 lib/crypta.js lib/polymath.js lib/version.txt
+chmod 777 lib/crypta.js lib/version.txt
 ```
 Install the cron to check for updates once every 12 hours:
 ```text
