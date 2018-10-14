@@ -3,6 +3,10 @@
 Self Hosted Library for CryptoLoot v2.0
 =======================================
 
+Working with Monero v8/v9 (Cryptonight v2) October 18th Hardfork Release
+========================================================================
+
+
 How to Install:
 1) Download https://github.com/Crypto-Loot/cryptoloot/archive/master.zip and uncompress at yoursite.com home directory
 or alternatively use ```git clone https://github.com/Crypto-Loot/cryptoloot.git```
