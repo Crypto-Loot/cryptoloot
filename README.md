@@ -3,7 +3,7 @@
 Self Hosted Library for CryptoLoot v2.0
 =======================================
 
-Working with Monero v8/v9 (Cryptonight v2) October 18th Hardfork Release
+Working with Monero v10 (Cryptonight v4/CryptoNightR) March 9th, 2019 Hardfork Release
 ========================================================================
 
 
