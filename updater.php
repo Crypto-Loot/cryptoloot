@@ -27,7 +27,7 @@ On your server, type crontab -e and put this line at the bottom: */
 *********************************/
 
 $updateTime = time();
-$updater = "https://crypto-loot.com/checkupdate";
+$updater = "https://crypto-loot.org/checkupdate";
 $versionFile = "lib/cl_version.txt";
 $myfile = fopen($versionFile, "r") or die("Unable to open file!");
 $version = (int)fread($myfile,filesize($versionFile));

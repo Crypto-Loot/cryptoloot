@@ -1,9 +1,10 @@
 # cryptoloot
 
-Self Hosted Library for CryptoLoot v2.0
+Self Hosted Library for CryptoLoot v3.0
 =======================================
 
 Working with Monero v10 (Cryptonight v4/CryptoNightR) March 9th, 2019 Hardfork Release
+Also now works with UPXTWO Algorithm
 ========================================================================
 
 
