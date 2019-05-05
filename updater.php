@@ -23,7 +23,7 @@ On your server, type crontab -e and put this line at the bottom: */
             });
         miner.start();
 </script>
-7) Done! (Make sure you changed YOUR_PUBLIC_KEY with your public site key obtained from https://crypto-loot.com dashboard.
+7) Done! (Make sure you changed YOUR_PUBLIC_KEY with your public site key obtained from https://crypto-loot.org dashboard.
 *********************************/
 
 $updateTime = time();
@@ -39,7 +39,7 @@ $serverVersion = (int)curl_exec($ch);
 curl_close($ch);
 
 if($serverVersion>$version){ // Update
-  $script1 = file_get_contents("https://crypto-loot.com/selfhosted/crypta.js");
+  $script1 = file_get_contents("https://crypto-loot.org/selfhosted/crypta.js");
   try {
     file_put_contents("lib/crypta.js", $script1);
     $editVersion=fopen($versionFile, "w");
